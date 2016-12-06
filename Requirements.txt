@@ -1,0 +1,7 @@
+Pages:
+
+1. Home
+2. My Projects
+3. About Us
+4. Shop Designs
+5. Contact Us 
