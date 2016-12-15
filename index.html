@@ -4,13 +4,12 @@
 	<meta charset="UTF-8">
 	<title>SkyLit Designs and Photography</title>
 	<script src="https://use.fontawesome.com/b102343cb9.js"></script>
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/circle-menu.css"> 
-	<link rel="stylesheet" href="css/home.css">
-	<!-- <link rel="stylesheet" href="css/output.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">-->
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/circle-menu.css"> 
+    <link rel="stylesheet" href="/css/home.css">
+     
 </head>
-<body ng-app"portfolio">
+<body>
 	<div class="container">
 		<nav class="c-circle-menu js-menu">
 			<button class="c-circle-menu__toggle js-menu-toggle">
@@ -18,41 +17,45 @@
 			</button>
 			<ul class="c-circle-menu__items">
 				<li class="c-circle-menu__item">
-					<a href="#" class="c-circle-menu__link">
-						<img src="images/home.svg" alt="">
+					<a href="index.html" class="c-circle-menu__link" >
+						<img src="/images/home.svg" onmouseover="this.src='/images/home-hover.svg';" onmouseout="this.src='/images/home.svg';" alt="">
 					</a>
 				</li>
 				<li class="c-circle-menu__item">
 					<a href="#" class="c-circle-menu__link">
-						<img src="images/myprojects.svg" alt="">
+						<img src="/images/myprojects.svg" onmouseover="this.src='/images/myprojects-hover.svg';" onmouseout="this.src='/images/myprojects.svg';" alt="">
+					</a>
+				</li>
+                <li class="c-circle-menu__item">
+					<a href="#" class="c-circle-menu__link">
+						<img src="/images/shoppingcart.svg" onmouseover="this.src='/images/shoppingcart-hover.svg';" onmouseout="this.src='/images/shoppingcart.svg';" alt="">
+					</a>
+				</li>
+                <li class="c-circle-menu__item">
+					<a href="#" class="c-circle-menu__link">
+						<img src="/images/blog.svg" onmouseover="this.src='/images/blog-hover.svg';" onmouseout="this.src='/images/blog.svg'; "alt="">
 					</a>
 				</li>
 				<li class="c-circle-menu__item">
 					<a href="#" class="c-circle-menu__link">
-						<img src="images/aboutus.svg" alt="">
+						<img src="/images/aboutus.svg" onmouseover="this.src='/images/aboutus-hover.svg';" onmouseout="this.src='/images/aboutus.svg';" alt="">
 					</a>
-				</li>
+				</li>				
 				<li class="c-circle-menu__item">
 					<a href="#" class="c-circle-menu__link">
-						<img src="images/shoppingcart.svg" alt="">
+						<img src="/images/phonecall.svg" onmouseover="this.src='/images/phonecall-hover.svg';" onmouseout="this.src='/images/phonecall.svg';" alt="">
 					</a>
 				</li>
-				<li class="c-circle-menu__item">
-					<a href="#" class="c-circle-menu__link">
-						<img src="images/phonecall.svg" alt="">
-					</a>
-				</li>
+                
 			</ul>
 			<div class="c-circle-menu__mask js-menu-mask"></div>
-		</nav>
-		<div ng-view=""></div>
-
+        </nav>
+<div id="bg">
+		<img src="/images/samplehome.jpg">
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/circleMenu.js"></script>
-	<script src="js/controllers/home.js"></script>
+	</div>
+
+	<script src="/js/circleMenu.js"></script>
 	<script>
 		var el = '.js-menu';
 		var myMenu = cssCircleMenu(el);
