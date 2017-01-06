@@ -1,0 +1,82 @@
+@media only screen and (max-width: 400px), screen and (max-height: 400px) {
+	.social {
+		display: none;
+	}
+}
+
+
+.social {
+	
+	position: fixed;
+	margin-top: 30px;
+	top: 40%;
+	perspective: 1000px;
+	right:0;
+	padding: 0;
+	box-shadow: -1px -1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(0,0,0,0.3), 0 0 10px #000;
+}
+
+.social li a {
+	display: block;
+	
+	width: 40px;
+	background: #222;
+	border-bottom: 1px solid #333;
+	font: normal normal normal
+	16px/20px 
+	'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	padding: 10px;
+	text-decoration: none;
+	text-align: center;
+	transition: background .5s ease .300ms
+}
+
+.social li:first-child a:hover { background: #3b5998 }
+.social li:nth-child(2) a:hover { background: #405de6 }
+.social li:nth-child(3) a:hover { background: #cd201f }
+.social li:nth-child(4) a:hover { background: #00acee }
+.social li:nth-child(5) a:hover { background: #0099e5 }
+
+.social li:first-child a {  background: #3b5998 }
+.social li:nth-child(2) a { background: #405de6 }
+.social li:nth-child(3) a { background: #cd201f }
+.social li:nth-child(4) a { background: #00acee }
+.social li:last-child a {  background: #0099e5 }
+
+.social li a span {
+	width: 100px;
+	float: right;
+	text-align: center;
+	background: #222;
+	color: #fff;
+	margin: -25px 40px;
+	padding: 8px;
+	transform-origin: 0;
+	visibility: hidden;
+	opacity: 0;
+	transform: rotateY(45deg);
+	border-radius: 5px;
+	transition: all .5s ease .300ms
+}
+
+.social li span:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: -20px;
+	top: 7px;
+	border-right: 10px solid transparent;
+	border-left: 10px solid #222;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+.social li a:hover span {
+	visibility: visible;
+	opacity: 1;
+	transform: rotateY(0)
+}

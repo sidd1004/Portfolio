@@ -18,6 +18,8 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Oswald', sans-serif;
+    
   }
 
   body {
@@ -27,22 +29,19 @@
     line-height: 1.8;
   }
 
-/* -----------------------------------------------------------------------------
-
-  Headings
-
-  ----------------------------------------------------------------------------- */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #3b3b3b;
-    font-weight: 700;
-    line-height: 1.2;
+  div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
   }
 
+  h1,
+  h2,
+  h3{
+    margin: 0 !important;
+  }
 /* -----------------------------------------------------------------------------
 
   Links
@@ -90,7 +89,7 @@
   .container {
     margin: 0 auto;
     padding: 0 24px;
-    max-width: 960px;
+    position: relative;
   }
 
   @media all and (min-width: 480px) {

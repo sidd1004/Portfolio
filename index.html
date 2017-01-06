@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>SkyLit Designs and Photography</title>
-	<script src="https://use.fontawesome.com/b102343cb9.js"></script>
+	<!--<link rel="import" href="/views/favicon.html">-->
+	<link rel="stylesheet" type="text/css" href="/css/plugins/vegas.min.css">
 	<link rel="stylesheet" href="/css/common.css">
-	<link rel="stylesheet" href="/css/circle-menu.css"> 
-    <link rel="stylesheet" href="/css/home.css">
-     
+	
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	
+
 </head>
+
 <body>
 	<div class="container">
-		<nav class="c-circle-menu js-menu">
+		<div id="navcontatiner"></div>
+		<div id="socialflyout"></div>
+		<!--<nav class="c-circle-menu js-menu">
 			<button class="c-circle-menu__toggle js-menu-toggle">
 				<span>Toggle</span>
 			</button>
 			<ul class="c-circle-menu__items">
 				<li class="c-circle-menu__item">
-					<a href="index.html" class="c-circle-menu__link" >
+					<a href="index.html" class="c-circle-menu__link">
 						<img src="/images/home.svg" onmouseover="this.src='/images/home-hover.svg';" onmouseout="this.src='/images/home.svg';" alt="">
 					</a>
 				</li>
@@ -26,40 +34,56 @@
 						<img src="/images/myprojects.svg" onmouseover="this.src='/images/myprojects-hover.svg';" onmouseout="this.src='/images/myprojects.svg';" alt="">
 					</a>
 				</li>
-                <li class="c-circle-menu__item">
+				<li class="c-circle-menu__item">
 					<a href="#" class="c-circle-menu__link">
 						<img src="/images/shoppingcart.svg" onmouseover="this.src='/images/shoppingcart-hover.svg';" onmouseout="this.src='/images/shoppingcart.svg';" alt="">
 					</a>
 				</li>
-                <li class="c-circle-menu__item">
+				<li class="c-circle-menu__item">
 					<a href="#" class="c-circle-menu__link">
-						<img src="/images/blog.svg" onmouseover="this.src='/images/blog-hover.svg';" onmouseout="this.src='/images/blog.svg'; "alt="">
+						<img src="/images/blog.svg" onmouseover="this.src='/images/blog-hover.svg';" onmouseout="this.src='/images/blog.svg'; " alt="">
 					</a>
 				</li>
 				<li class="c-circle-menu__item">
 					<a href="#" class="c-circle-menu__link">
 						<img src="/images/aboutus.svg" onmouseover="this.src='/images/aboutus-hover.svg';" onmouseout="this.src='/images/aboutus.svg';" alt="">
 					</a>
-				</li>				
+				</li>
 				<li class="c-circle-menu__item">
 					<a href="#" class="c-circle-menu__link">
 						<img src="/images/phonecall.svg" onmouseover="this.src='/images/phonecall-hover.svg';" onmouseout="this.src='/images/phonecall.svg';" alt="">
 					</a>
 				</li>
-                
+
 			</ul>
 			<div class="c-circle-menu__mask js-menu-mask"></div>
-        </nav>
-<div id="bg">
-		<img src="/images/samplehome.jpg">
-	</div>
-	</div>
+		</nav>-->
+		<div class="homepage-info">
+			<h1>
+				<span class="line1">SkyLit</span>
+			</h1>
+			<h3>
+				<span class="line2">Designs and Photography</span>
+			</h3>
+			
+		</div>
 
-	<script src="/js/circleMenu.js"></script>
-	<script>
-		var el = '.js-menu';
-		var myMenu = cssCircleMenu(el);
-	</script>
+
+
+
+	</div>
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+	
+	<script src="/js/plugins/vegas.min.js"></script>
+	<script src="/js/importCheck.js"></script>
+	<script src="/js/plugins/homeSlideshow.js"></script>
+
+
+
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 </body>
+
 </html>

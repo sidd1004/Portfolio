@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/css/circle-menu.css">
+<nav class="c-circle-menu js-menu">
+    <button class="c-circle-menu__toggle js-menu-toggle">
+        <span>Toggle</span>
+    </button>
+    <ul class="c-circle-menu__items">
+        <li class="c-circle-menu__item">
+            <a href="index.html" class="c-circle-menu__link">
+                <img src="/images/home.svg" onmouseover="this.src='/images/home-hover.svg';" onmouseout="this.src='/images/home.svg';" alt="">
+            </a>
+        </li>
+        <li class="c-circle-menu__item">
+            <a href="#" class="c-circle-menu__link">
+                <img src="/images/myprojects.svg" onmouseover="this.src='/images/myprojects-hover.svg';" onmouseout="this.src='/images/myprojects.svg';" alt="">
+            </a>
+        </li>
+        <li class="c-circle-menu__item">
+            <a href="#" class="c-circle-menu__link">
+                <img src="/images/shoppingcart.svg" onmouseover="this.src='/images/shoppingcart-hover.svg';" onmouseout="this.src='/images/shoppingcart.svg';" alt="">
+            </a>
+        </li>
+        <li class="c-circle-menu__item">
+            <a href="#" class="c-circle-menu__link">
+                <img src="/images/blog.svg" onmouseover="this.src='/images/blog-hover.svg';" onmouseout="this.src='/images/blog.svg'; " alt="">
+            </a>
+        </li>
+        <li class="c-circle-menu__item">
+            <a href="#" class="c-circle-menu__link">
+                <img src="/images/aboutus.svg" onmouseover="this.src='/images/aboutus-hover.svg';" onmouseout="this.src='/images/aboutus.svg';" alt="">
+            </a>
+        </li>
+        <li class="c-circle-menu__item">
+            <a href="#" class="c-circle-menu__link">
+                <img src="/images/phonecall.svg" onmouseover="this.src='/images/phonecall-hover.svg';" onmouseout="this.src='/images/phonecall.svg';" alt="">
+            </a>
+        </li>
+
+    </ul>
+    <div class="c-circle-menu__mask js-menu-mask"></div>
+</nav>
+
+
+
+<script src="/js/circleMenu.js"></script>
+<script>
+    var el = '.js-menu';
+    var myMenu = cssCircleMenu(el);
+</script>
